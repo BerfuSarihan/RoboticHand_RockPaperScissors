@@ -7,7 +7,7 @@ An interactive robotic hand that mimics human gestures and plays Rock-Paper-Scis
 - 2 flex sensors on the index and ring fingers to detect user gestures
 - Ultrasonic sensor starts the game when a hand is detected (~20 cm)
 - Two modes:
-  - **Hand Mimic Mode**: Robot copies your hand gestures
+  - **Hand Mimic Mode**: Robot copies your hand gestures (Code for this mode will be added soon.)
   - **Game Mode**: Robot plays Rock-Paper-Scissors with the user
 - Serial Monitor displays both moves and the winner of each round
 
