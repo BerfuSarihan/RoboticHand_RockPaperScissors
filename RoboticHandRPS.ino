@@ -184,8 +184,8 @@ void playPaper() {
 // Function: Scissors Gesture
 void playScissors() {
   index.write(open);
-  ring.write(open);
+  middle.write(open);
   thumb.write(closed);
-  middle.write(closed);
+  ring.write(closed);
   pinky.write(closed);
 }
