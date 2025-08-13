@@ -4,17 +4,18 @@ An interactive robotic hand that mimics human gestures and plays Rock-Paper-Scis
 
 ## Features
 - 5 servo motors to control each finger individually
-- 2 flex sensors on the index and ring fingers to detect user gestures
+- Uses 2 flex sensors on the index and ring fingers, which is the optimal setup for detecting gestures for Rock-Paper-Scissors
+- An additional 5 flex sensors would be needed to fully mimic all finger movements, but they are not required for the game mode
 - Ultrasonic sensor starts the game when a hand is detected (~20 cm)
 - Two modes:
-  - **Hand Mimic Mode**: Robot copies your hand gestures (Code for this mode will be added soon.)
-  - **Game Mode**: Robot plays Rock-Paper-Scissors with the user
+  - **Hand Mimic Mode**: The robot mimics your hand gestures. *(Code for this mode will be added soon.)*
+  - **Game Mode**: The robot plays Rock-Paper-Scissors with the user
 - Serial Monitor displays both moves and the winner of each round
 
 ## Hardware Requirements
 - Arduino board (Uno or compatible clone)
 - 5x Servo motors
-- 2x Flex sensors
+- 2x Flex sensors (5x for Hand Mimic mode)
 - 1x Ultrasonic sensor (HC-SR04)
 - Jumper wires, breadboard, and power supply
 
@@ -25,13 +26,14 @@ An interactive robotic hand that mimics human gestures and plays Rock-Paper-Scis
 - Ultrasonic sensor: trig → 7, echo → 8
 
 ## Usage
-1. Open `filename` in Arduino IDE
+1. Open `RoboticHandRPS.ino` in Arduino IDE
 2. Connect your Arduino and upload the code
 3. Place your hand ~20 cm above the ultrasonic sensor to start the game
 4. Observe moves and results on the Serial Monitor
 
-## Important Notes
+## Notes
 - **Flex Sensor Calibration**: Adjust `flexThreshold` depending on your sensors. Use the Serial Monitor to read raw values. Bent fingers should read above the threshold, straight fingers below.
 - **Servo Position Adjustment**: Adjust `open` and `closed` angles for smooth and complete finger movements. Test each finger individually to find the optimal positions.
+- **Flex Sensor Setup**: 2 flex sensors (index and ring fingers) are sufficient for Rock-Paper-Scissors game mode. To fully mimic all finger movements in hand mimic mode, 5 flex sensors would be required.
 
 
