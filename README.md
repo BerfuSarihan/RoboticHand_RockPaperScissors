@@ -2,6 +2,11 @@
 
 An interactive robotic hand that mimics human gestures and plays Rock-Paper-Scissors in real time.
 
+
+## Project Background
+
+This project was developed during my Erasmus+ stay at Universidad San Jorge in Spain. As part of a course assignment, we were asked to create a project using the sensors and motors provided. Using only 2 flex sensors, an ultrasonic sensor, 5 servo motors, and readily available materials from local stores, I designed and built this interactive robotic hand capable of playing Rock-Paper-Scissors and mimicking hand gestures. Despite the minimal setup, the project demonstrates real-time gesture detection, decision-making, and robotic control.
+
 ## Features
 - 5 servo motors to control each finger individually
 - Uses 2 flex sensors on the index and ring fingers, which is the optimal setup for detecting gestures for Rock-Paper-Scissors
@@ -11,6 +16,7 @@ An interactive robotic hand that mimics human gestures and plays Rock-Paper-Scis
   - **Hand Mimic Mode**: The robot mimics your hand gestures. *(Code for this mode will be added soon.)*
   - **Game Mode**: The robot plays Rock-Paper-Scissors with the user
 - Serial Monitor displays both moves and the winner of each round
+
 
 ## Hardware Requirements
 - Arduino board (Uno or compatible clone)
